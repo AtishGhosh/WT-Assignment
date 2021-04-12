@@ -1,0 +1,26 @@
+body {
+  font-family: 'Varela Round', sans-serif;
+  margin: 2% 5%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+strong {
+  font-size: 1.25rem;
+}
+
+.container {
+  margin: 3rem 0 0 0;
+  display: inline-block;
+}
+
+.sub-title {
+  margin-left: 5px;
+}
