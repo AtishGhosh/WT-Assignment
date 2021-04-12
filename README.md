@@ -1,7 +1,7 @@
 # WT Assignment
 Group Assignment for Web Technology (3rd Semester).
 <br>
-### Authors:
+### Authors (Group 13) :
 Atish Ghosh (1906385)
 <br>
 Harsh Gupta (1906397)
