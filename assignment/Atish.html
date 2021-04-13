@@ -32,8 +32,16 @@
       text-decoration: none;
     }
 
+    .heading {
+      background-color: transparent;
+    }
+
     .home-link {
       color: #6c757d;
+    }
+
+    .difference {
+      color: black;
     }
 
     .constructors {
@@ -55,19 +63,46 @@
       padding: 20px 5rem;
       background-color: black;
     }
+
+    .row {
+      margin-top: 50px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      body {
+        background-image: url();
+      }
+
+      .heading {
+        background-color: white;
+        margin: -2rem -5rem 0 -5rem;
+        padding: 2rem 5rem 2rem 5rem;
+        text-align: center;
+      }
+
+      .difference {
+        color: white;
+      }
+
+      .row {
+        margin-top: 20px;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <a class="home-link" href="../index.html">
-    <h5 class="sub-title" style="margin-left: 10px; margin-bottom: 20px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin-top: -5px; margin-right: 10px;" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-      </svg>Web Technology Assignment</h5>
-  </a>
-  <h1><img src="../assets/Atish/java.png" style="width: 3rem; margin-top: -10px; margin-right: 15px;" alt="">Java String Constructors</h1>
-  <div class="row" style="margin-top: 50px; margin-bottom: 50px; text-align: center;">
-    <h5><strong>String Class</strong>&emsp;<span class="text-muted">v/s</span>&emsp;<strong>String Literal</strong></h5>
+  <div class="heading">
+    <a class="home-link" href="../index.html">
+      <h5 class="sub-title" style="margin-left: 10px; margin-bottom: 20px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin-top: -5px; margin-right: 10px;" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+          <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+        </svg>Web Technology Assignment</h5>
+    </a>
+    <h1><img src="../assets/Atish/java.png" style="width: 3rem; margin-top: -10px; margin-right: 15px;" alt="">Java String Constructors</h1>
+  </div>
+  <div class="row" style="margin-bottom: 50px; text-align: center;">
+    <h5 class="difference"><strong>String Class</strong>&emsp;<span class="text-muted">v/s</span>&emsp;<strong>String Literal</strong></h5>
     <div class="col-md-6">
       <div class="card" style="margin-top: 20px;">
         <div class="card-body">
