@@ -1,0 +1,18 @@
+body {
+  font-family: 'Varela Round', sans-serif;
+  margin: 2rem 5rem 1rem 5rem;
+  background-image: url("../assets/Atish/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #0D6EFD;
+  height: 5000px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: #6c757d;
+}

@@ -1,10 +1,92 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAMRATA MODAK(1906404)</title>
+</head>
+<body>
+    <h1>STRING OPERATIONS</h1>
 
-  </body>
+          <ol type="i">
+            <li>
+              LENGTH OF A STRING
+            </li>
+            <li>
+              CONCATENATION OF STRINGS
+            </li>
+            <li>
+               REVERSE OF A STRING
+            </li>
+             <li>
+               COPY A STRING
+            </li>
+             <li>
+               COMPARE 2 STRINGS
+            </li>
+            <li>
+                SUBSTRING
+             </li>
+          </ol>
+          <h2>i)LENGTH OF A STRING:-</h2>
+          <h4>Function-Returns the length of string.</h4>
+          <h4>Syntax-strlen(string)</h4>
+          
+          <h2>ii)CONCATENATION OF STRINGS:-</h2>
+          <h4>Function-Concatenates string s2 onto the end of string s1.</h4>
+          <h4>Syntax-strcat(s1,s2)</h4>
+
+          <h2>iii)REVERSE OF A STRINGS:-</h2>
+          <h4>Function-Reverse the string</h4>
+          <h4>Syntax-strrev(s1)</h4>
+
+          <h2>iv)COPY A STRING:-</h2>
+          <h4>Function-Copies string s2 into string s1.</h4>
+          <h4>Syntax-strcpy(s1,s2)</h4>
+
+          <h2>v)COMPARE 2 STRINGS:-</h2>
+          <h4>Function-Compare 2 strings.</h4>
+          <h4>Syntax-strncmp(s1,s2)</h4>
+
+          <h2>vi)SUB-STRING:-</h2>
+          <h4>Function-To find substring in main string</h4>
+          <h4>Syntax-strstr(main string,sub string)</h4>
+
+          <h2>A PROGRAMME TO EXPLAIN ALL THE STRING OPERATIONS</h2>
+          <h4> #include < stdio.h ></h4>
+               <h4>#include < string.h ></h4> 
+                
+                <h4>int main () { </h4>
+                
+                   <h4>char str1[12] = "Hello";</h4>
+                   <h4>char str2[12] = "World";</h4>
+                   <h4> char str3[12];</h4>
+                   <h4>int  len ;</h4>
+                   <h4>char rev[10];</h4>
+                
+                   <h4>strcpy(str3, str1);</h4>
+                   <h4>printf("strcpy( str3, str1) :  %s\n", str3 );</h4>
+
+                   <h4>len = strlen(str1);</h4>
+                    <h4>printf("strlen(str1) :  %d\n", len );</h4>
+
+                <h4>rev[10]=strrev(s1);</h4>
+                        <h4>printf("strrev(str1) :  %d\n", rev[] );</h4>
+                       
+                   <h4> strcat( str1, str2);</h4>
+                    <h4> printf("strcat( str1, str2):   %s\n", str1 );</h4>
+                   
+                   <h4>return 0;</h4>
+                   <h4> }</h4>
+
+
+                   <h2>OUTPUT:-</h2>
+                   <h2>strcpy( str3, str1) :  Hello</h2>
+                   <h2>strlen(str1) : 5</h2>
+                   <h2>strrev(str1) : olleH</h2>
+                   <h2>strcat( str1, str2):   HelloWorld</h2>
+ 
+
+</body>
 </html>
