@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi Thakur(1906416)</title>
+</head>
+<body style="background-color:powderblue;">
+<h1 style="color:red;">String Buffer & Methods</h1>
+</p>
+<strong>StringBuffer</strong> is a peer class of String that provides much of the functionality of strings. <br>String represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences.
+</p>
+<p>
+<strong>StringBuffer</strong> may have characters and substrings inserted in the middle or appended to the end.<br> It will automatically grow to make room for such additions and often has more characters preallocated than are actually needed, to allow room for growth.
+</p>
+<h1>Methods</h1>
+<p>Some of the most used methods are:</p>
+<p><strong>•length( ) and capacity( ):</strong> The length of a StringBuffer can be found by the length( ) method, <br>while the total allocated capacity can be found by the capacity( ) method.<br>Code Example:</p>
+<pre>
+Import java.io.
+class GFG
+public static void main(String[]
+StringBuffer s = new StringBu:
+int p = s.length();
+int q = s.capacity(); System.out.printlnMength of System.out.println(.Capacity
+<strong>Output:</strong>
+Length of string GeeksforGeeks.13 Capacity of string GeeksforGeeks.29
 
-  </body>
+</pre>
+<pre>
+<strong>•append(,):</strong> It is used to add text at the end of the existence text.<br> Here are a few of its forms:<br>
+StringBuffer append(String str) of this sequence.
+Syntax:
+public CharSequence subSequence(int start,
+                                               int end)
+
+
+</pre>
+<pre>
+<strong>•String  substring(int start):</strong> This method returns a new String that contains a subsequence of characters currently contained in this character sequence. <br>Syntax:
+<br>public String substring(int start)
+<br>public String substring(int start,
+<br>int end)
+<strong>•String  toString():</strong> This method returns a string representing the data in this sequence.<br>
+Syntax:
+public String tostring()
+<strong>•void trimToSize():</strong> This method attempts to reduce storage used for the character sequence.
+Syntax:
+public void trimToSize()
+
+</pre>
+
+
+</body>
 </html>
