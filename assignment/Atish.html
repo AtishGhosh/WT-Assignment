@@ -17,7 +17,6 @@
   <style media="screen">
     body {
       font-family: 'Varela Round', sans-serif;
-      margin: 2rem 5% 0 5%;
       background-image: url("../assets/Atish/background.png");
       background-repeat: no-repeat;
       background-size: contain;
@@ -35,6 +34,10 @@
     hr {
       background-color: black;
       opacity: 1;
+    }
+
+    .body {
+      margin: 2rem 5% 0 5%;
     }
 
     .heading {
@@ -73,7 +76,6 @@
     }
 
     .bottom-bar {
-      margin: 20px -5% 0 -5%;
       padding: 20px 5%;
       background-color: black;
     }
@@ -85,12 +87,14 @@
     @media only screen and (max-width: 992px) {
       body {
         background-image: url();
+      }
+
+      .body {
         margin: 0;
       }
 
       .heading {
         background-color: white;
-        margin: 0;
         padding: 2rem 5%;
         text-align: center;
       }
@@ -107,195 +111,201 @@
 </head>
 
 <body>
-  <div class="heading">
-    <a class="home-link" href="../index.html">
-      <h5 class="sub-title" style="margin-left: 10px; margin-bottom: 20px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin-top: -5px; margin-right: 10px;" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-          <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-        </svg>Web Technology Assignment</h5>
-    </a>
-    <h1><img src="../assets/Atish/java.png" style="width: 3rem; margin-top: -10px; margin-right: 15px;" alt="">Java String Constructors</h1>
-  </div>
-  <div class="row" style="margin-bottom: 50px; text-align: center;">
-    <h5 class="difference"><strong>String Class</strong>&emsp;<span class="text-muted">v/s</span>&emsp;<strong>String Literal</strong></h5>
-    <div class="col-lg-6">
-      <div class="card" style="margin-top: 20px;">
-        <div class="card-body">
-          <h4 class="card-title">String Classes</h4>
-          <p class="card-text">A new keyword is used to create an object and the object is created in the heap memory whereas its reference will be pointed to String pool.</p>
+  <div class="body">
+    <div class="heading">
+      <a class="home-link" href="../index.html">
+        <h5 class="sub-title" style="margin-left: 10px; margin-bottom: 20px;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin-top: -5px; margin-right: 10px;" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+          </svg>Web Technology Assignment</h5>
+      </a>
+      <h1><img src="../assets/Atish/java.png" style="width: 3rem; margin-top: -10px; margin-right: 15px;" alt="">Java String Constructors</h1>
+    </div>
+    <div class="row" style="margin-bottom: 50px; text-align: center;">
+      <h5 class="difference"><strong>String Class</strong>&emsp;<span class="text-muted">v/s</span>&emsp;<strong>String Literal</strong></h5>
+      <div class="col-lg-6">
+        <div class="card" style="margin-top: 20px;">
+          <div class="card-body">
+            <h4 class="card-title">String Classes</h4>
+            <p class="card-text">A new keyword is used to create an object and the object is created in the heap memory whereas its reference will be pointed to String pool.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">String s = new String (“Atish”);</li>
+            <li class="list-group-item" style="text-align: left;">
+              <h5>Example</h5><span class="text-muted code">
+                String str1 = "Atish";<br>String str2 = "Atish";<br>System.out.println(str1 == str2);&emsp;<kbd>// true</kbd>
+              </span>
+            </li>
+          </ul>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">String s = new String (“Atish”);</li>
-          <li class="list-group-item" style="text-align: left;">
-            <h5>Example</h5><span class="text-muted code">
-              String str1 = "Atish";<br>String str2 = "Atish";<br>System.out.println(str1 == str2);&emsp;<kbd>// true</kbd>
-            </span>
-          </li>
-        </ul>
       </div>
-    </div>
-    <div class="col-lg-6">
-      <div class="card" style="margin-top: 20px;">
-        <div class="card-body">
-          <h4 class="card-title">String Literals</h4>
-          <p class="card-text">Here the reference will be directly referred to String Pool. JVM initially checks for the availability with the same value in the constant pool.</p>
+      <div class="col-lg-6">
+        <div class="card" style="margin-top: 20px;">
+          <div class="card-body">
+            <h4 class="card-title">String Literals</h4>
+            <p class="card-text">Here the reference will be directly referred to String Pool. JVM initially checks for the availability with the same value in the constant pool.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">String s = “Atish”;</li>
+            <li class="list-group-item" style="text-align: left;">
+              <h5>Example</h5><span class="text-muted code">
+                String str3 = new String("Atish");<br>String str4 = new String("Atish");<br>System.out.println(str3 == str4);&emsp;<kbd>// false</kbd>
+              </span>
+            </li>
+          </ul>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">String s = “Atish”;</li>
-          <li class="list-group-item" style="text-align: left;">
-            <h5>Example</h5><span class="text-muted code">
-              String str3 = new String("Atish");<br>String str4 = new String("Atish");<br>System.out.println(str3 == str4);&emsp;<kbd>// false</kbd>
-            </span>
-          </li>
-        </ul>
       </div>
     </div>
-  </div>
 
-  <!--Constructors-->
+    <!--Constructors-->
 
-  <hr>
-  <h3 style="text-align: center; color: white; font-weight: bold;">List of Constructors for String Class</h3>
-  <hr>
-  <div class="constructors">
-    <div class="card">
-      <div class="card-body" style="padding: 30px;">
-        <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">1.</span>&emsp;String(byte[] byte_arr)</h5>
-        <p class="card-text" style="margin-top: 15px; display: inline-block;">&#8594;&emsp;Construct a new String by decoding the <i>byte array</i>. It uses the platform’s default character set for decoding.</p>
+    <hr>
+    <h3 style="text-align: center; color: white; font-weight: bold;">List of Constructors for String Class</h3>
+    <hr>
+    <div class="constructors">
+      <div class="card">
+        <div class="card-body" style="padding: 30px;">
+          <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">1.</span>&emsp;String(byte[] byte_arr)</h5>
+          <p class="card-text" style="margin-top: 15px; display: inline-block;">&#8594;&emsp;Construct a new String by decoding the <i>byte array</i>. It uses the platform’s default character set for decoding.</p>
+        </div>
+        <div class="card-footer">
+          <h5>Example</h5>
+          <span class="text-muted code">
+            byte[] b_arr = {65, 116, 105, 115, 104};<br>String s_byte =new String(b_arr);
+          </span>
+        </div>
       </div>
-      <div class="card-footer">
-        <h5>Example</h5>
-        <span class="text-muted code">
-          byte[] b_arr = {65, 116, 105, 115, 104};<br>String s_byte =new String(b_arr);
-        </span>
+      <div class="card" style="margin-top: 20px;">
+        <div class="card-body" style="padding: 30px;">
+          <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">2.</span>&emsp;String(byte[] byte_arr, Charset char_set)</h5>
+          <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Construct a new String by decoding the <i>byte array</i>. It uses the <i>char_set</i> for decoding.</p>
+        </div>
+        <div class="card-footer">
+          <h5>Example</h5>
+          <span class="text-muted code">
+            byte[] b_arr = {65, 116, 105, 115, 104};<br>Charset cs = <i>CharSet</i>.defaultCharset();<br>String s_byte_char = new String(b_arr, cs);
+          </span>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 20px;">
+        <div class="card-body" style="padding: 30px;">
+          <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">3.</span>&emsp;String(byte[] byte_arr, String char_set_name)</h5>
+          <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Construct a new String by decoding the <i>byte array</i>. It uses the <i>char_set_name</i> for decoding. It looks similar to the above constructs and they appear before similar
+            functions but it
+            takes the <i>String(which contains char_set_name)</i> as parameter while the above constructor takes <i>CharSet</i>.</p>
+        </div>
+        <div class="card-footer">
+          <h5>Example</h5>
+          <span class="text-muted code">
+            byte[] b_arr = {65, 116, 105, 115, 104};<br>String s = new String(b_arr, "US-ASCII");
+          </span>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 20px;">
+        <div class="card-body" style="padding: 30px;">
+          <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">4.</span>&emsp;String(byte[] byte_arr, int start_index, int length)</h5>
+          <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Construct a new string from the bytes array depending on the <i>start_index(Starting location)</i> and <i>length(number of characters from starting location)</i>.</p>
+        </div>
+        <div class="card-footer">
+          <h5>Example</h5>
+          <span class="text-muted code">
+            byte[] b_arr = {65, 116, 105, 115, 104};<br>String s = new String(b_arr, 1, 3);
+          </span>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 20px;">
+        <div class="card-body" style="padding: 30px;">
+          <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">5.</span>&emsp;String(byte[] byte_arr, int start_index, int length, Charset char_set)</h5>
+          <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Construct a new string from the bytes array depending on the <i>start_index(Starting location)</i> and <i>length(number of characters from starting location)</i>. Uses
+            <i>char_set</i> for decoding.
+          </p>
+        </div>
+        <div class="card-footer">
+          <h5>Example</h5>
+          <span class="text-muted code">
+            byte[] b_arr = {65, 116, 105, 115, 104};<br>Charset cs = <i>CharSet</i>.defaultCharset();<br>String s = new String(b_arr, 1, 3, cs);
+          </span>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 20px;">
+        <div class="card-body" style="padding: 30px;">
+          <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">6.</span>&emsp;String(byte[] byte_arr, int start_index, int length, String char_set_name)</h5>
+          <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Construct a new string from the bytes array depending on the <i>start_index(Starting location)</i> and <i>length(number of characters from starting location)</i>. Uses
+            <i>char_set_name</i> for decoding.
+          </p>
+        </div>
+        <div class="card-footer">
+          <h5>Example</h5>
+          <span class="text-muted code">
+            byte[] b_arr = {65, 116, 105, 115, 104};<br>String s = new String(b_arr, 1, 4, "US-ASCII");
+          </span>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 20px;">
+        <div class="card-body" style="padding: 30px;">
+          <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">7.</span>&emsp;String(char[] char_arr)</h5>
+          <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Allocates a new String from the given <i>Character array</i>.</p>
+        </div>
+        <div class="card-footer">
+          <h5>Example</h5>
+          <span class="text-muted code">
+            char char_arr[] = {'A', 't', 'i', 's', 'h'};<br>String s = new String(char_arr);
+          </span>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 20px;">
+        <div class="card-body" style="padding: 30px;">
+          <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">8.</span>&emsp;String(char[] char_array, int start_index, int count)</h5>
+          <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Allocates a String from a given character array but choose <i>count</i> characters from the <i>start_index</i>.</p>
+        </div>
+        <div class="card-footer">
+          <h5>Example</h5>
+          <span class="text-muted code">
+            char char_arr[] = {'A', 't', 'i', 's', 'h'};<br>String s = new String(char_arr , 1, 3);
+          </span>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 20px;">
+        <div class="card-body" style="padding: 30px;">
+          <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">9.</span>&emsp;String(int[] uni_code_points, int offset, int count)</h5>
+          <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Allocates a String from a <i>uni_code_array</i> but choose <i>count</i> characters from the <i>start_index</i>.</p>
+        </div>
+        <div class="card-footer">
+          <h5>Example</h5>
+          <span class="text-muted code">
+            int[] uni_code = {65, 116, 105, 115, 104};<br>String s = new String(uni_code, 1, 3);
+          </span>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 20px;">
+        <div class="card-body" style="padding: 30px;">
+          <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">10.</span>&emsp;String(StringBuffer s_buffer)</h5>
+          <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Allocates a new string from the string in <i>s_buffer</i>.</p>
+        </div>
+        <div class="card-footer">
+          <h5>Example</h5>
+          <span class="text-muted code">
+            StringBuffer s_buffer = new StringBuffer("Atish");<br>String s = new String(s_buffer);
+          </span>
+        </div>
+      </div>
+      <div class="card" style="margin-top: 20px;">
+        <div class="card-body" style="padding: 30px;">
+          <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">11.</span>&emsp;String(StringBuilder s_builder)</h5>
+          <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Allocates a new string from the string in <i>s_builder</i>.</p>
+        </div>
+        <div class="card-footer">
+          <h5>Example</h5>
+          <span class="text-muted code">
+            StringBuilder s_builder = new StringBuilder("Atish");<br>String s = new String(s_builder);
+          </span>
+        </div>
       </div>
     </div>
-    <div class="card" style="margin-top: 20px;">
-      <div class="card-body" style="padding: 30px;">
-        <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">2.</span>&emsp;String(byte[] byte_arr, Charset char_set)</h5>
-        <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Construct a new String by decoding the <i>byte array</i>. It uses the <i>char_set</i> for decoding.</p>
-      </div>
-      <div class="card-footer">
-        <h5>Example</h5>
-        <span class="text-muted code">
-          byte[] b_arr = {65, 116, 105, 115, 104};<br>Charset cs = <i>CharSet</i>.defaultCharset();<br>String s_byte_char = new String(b_arr, cs);
-        </span>
-      </div>
-    </div>
-    <div class="card" style="margin-top: 20px;">
-      <div class="card-body" style="padding: 30px;">
-        <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">3.</span>&emsp;String(byte[] byte_arr, String char_set_name)</h5>
-        <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Construct a new String by decoding the <i>byte array</i>. It uses the <i>char_set_name</i> for decoding. It looks similar to the above constructs and they appear before similar functions but it
-          takes the <i>String(which contains char_set_name)</i> as parameter while the above constructor takes <i>CharSet</i>.</p>
-      </div>
-      <div class="card-footer">
-        <h5>Example</h5>
-        <span class="text-muted code">
-          byte[] b_arr = {65, 116, 105, 115, 104};<br>String s = new String(b_arr, "US-ASCII");
-        </span>
-      </div>
-    </div>
-    <div class="card" style="margin-top: 20px;">
-      <div class="card-body" style="padding: 30px;">
-        <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">4.</span>&emsp;String(byte[] byte_arr, int start_index, int length)</h5>
-        <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Construct a new string from the bytes array depending on the <i>start_index(Starting location)</i> and <i>length(number of characters from starting location)</i>.</p>
-      </div>
-      <div class="card-footer">
-        <h5>Example</h5>
-        <span class="text-muted code">
-          byte[] b_arr = {65, 116, 105, 115, 104};<br>String s = new String(b_arr, 1, 3);
-        </span>
-      </div>
-    </div>
-    <div class="card" style="margin-top: 20px;">
-      <div class="card-body" style="padding: 30px;">
-        <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">5.</span>&emsp;String(byte[] byte_arr, int start_index, int length, Charset char_set)</h5>
-        <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Construct a new string from the bytes array depending on the <i>start_index(Starting location)</i> and <i>length(number of characters from starting location)</i>. Uses <i>char_set</i> for decoding.</p>
-      </div>
-      <div class="card-footer">
-        <h5>Example</h5>
-        <span class="text-muted code">
-          byte[] b_arr = {65, 116, 105, 115, 104};<br>Charset cs = <i>CharSet</i>.defaultCharset();<br>String s = new String(b_arr, 1, 3, cs);
-        </span>
-      </div>
-    </div>
-    <div class="card" style="margin-top: 20px;">
-      <div class="card-body" style="padding: 30px;">
-        <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">6.</span>&emsp;String(byte[] byte_arr, int start_index, int length, String char_set_name)</h5>
-        <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Construct a new string from the bytes array depending on the <i>start_index(Starting location)</i> and <i>length(number of characters from starting location)</i>. Uses <i>char_set_name</i> for decoding.
-        </p>
-      </div>
-      <div class="card-footer">
-        <h5>Example</h5>
-        <span class="text-muted code">
-          byte[] b_arr = {65, 116, 105, 115, 104};<br>String s = new String(b_arr, 1, 4, "US-ASCII");
-        </span>
-      </div>
-    </div>
-    <div class="card" style="margin-top: 20px;">
-      <div class="card-body" style="padding: 30px;">
-        <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">7.</span>&emsp;String(char[] char_arr)</h5>
-        <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Allocates a new String from the given <i>Character array</i>.</p>
-      </div>
-      <div class="card-footer">
-        <h5>Example</h5>
-        <span class="text-muted code">
-          char char_arr[] = {'A', 't', 'i', 's', 'h'};<br>String s = new String(char_arr);
-        </span>
-      </div>
-    </div>
-    <div class="card" style="margin-top: 20px;">
-      <div class="card-body" style="padding: 30px;">
-        <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">8.</span>&emsp;String(char[] char_array, int start_index, int count)</h5>
-        <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Allocates a String from a given character array but choose <i>count</i> characters from the <i>start_index</i>.</p>
-      </div>
-      <div class="card-footer">
-        <h5>Example</h5>
-        <span class="text-muted code">
-          char char_arr[] = {'A', 't', 'i', 's', 'h'};<br>String s = new String(char_arr , 1, 3);
-        </span>
-      </div>
-    </div>
-    <div class="card" style="margin-top: 20px;">
-      <div class="card-body" style="padding: 30px;">
-        <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">9.</span>&emsp;String(int[] uni_code_points, int offset, int count)</h5>
-        <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Allocates a String from a <i>uni_code_array</i> but choose <i>count</i> characters from the <i>start_index</i>.</p>
-      </div>
-      <div class="card-footer">
-        <h5>Example</h5>
-        <span class="text-muted code">
-          int[] uni_code = {65, 116, 105, 115, 104};<br>String s = new String(uni_code, 1, 3);
-        </span>
-      </div>
-    </div>
-    <div class="card" style="margin-top: 20px;">
-      <div class="card-body" style="padding: 30px;">
-        <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">10.</span>&emsp;String(StringBuffer s_buffer)</h5>
-        <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Allocates a new string from the string in <i>s_buffer</i>.</p>
-      </div>
-      <div class="card-footer">
-        <h5>Example</h5>
-        <span class="text-muted code">
-          StringBuffer s_buffer = new StringBuffer("Atish");<br>String s = new String(s_buffer);
-        </span>
-      </div>
-    </div>
-    <div class="card" style="margin-top: 20px;">
-      <div class="card-body" style="padding: 30px;">
-        <h5 class="card-title" style="font-weight: bold;"><span class="text-muted">11.</span>&emsp;String(StringBuilder s_builder)</h5>
-        <p class="card-text" style="margin-top: 15px;">&#8594;&emsp;Allocates a new string from the string in <i>s_builder</i>.</p>
-      </div>
-      <div class="card-footer">
-        <h5>Example</h5>
-        <span class="text-muted code">
-          StringBuilder s_builder = new StringBuilder("Atish");<br>String s = new String(s_builder);
-        </span>
-      </div>
-    </div>
+    <hr>
+    <h3 style="text-align: center; color: white;"><strong>Thank you!</strong> Here is what's next : <a href="../assignment/Harsh.html" target="_blank" class="btn btn-warning"><strong>String Methods</strong> by <strong>Harsh</strong></a></h3>
+    <hr>
   </div>
-  <hr>
-  <h3 style="text-align: center; color: white;"><strong>Thank you!</strong> Here is what's next : <a href="../assignment/Harsh.html" target="_blank" class="btn btn-warning"><strong>String Methods</strong> by <strong>Harsh</strong></a></h3>
-  <hr>
   <nav class="navbar navbar-dark bottom-bar">
     <div class="container-fluid">
       <a class="navbar-brand">
