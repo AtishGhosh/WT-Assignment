@@ -1,10 +1,502 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<html>
 
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>String Methods</title>
+  <link rel="shortcut icon" href="../assets/Harsh/java2.png">
+  <meta name="description" content="Description of your site goes here">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">
+  <style media="screen">
+    /* CSS Document */
+
+    body {
+      margin: 0px;
+      padding: 0px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #464a4f;
+      background: url('../assets/Harsh/body-bg.jpg') repeat;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    li {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    img {
+      border: none;
+    }
+
+    a {
+      color: #072FCF;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #072FCF;
+      text-decoration: none;
+    }
+
+    .copyright {
+      border: 0px;
+      height: 1px;
+      width: 1px;
+    }
+
+    #container {
+      width: 929px;
+      margin: 6px auto;
+    }
+
+    #header {
+      width: 929px;
+      float: left;
+      background: url('../assets/Harsh/heaser-bg.jpg') no-repeat;
+      height: 221px;
+    }
+
+    #logo {
+      width: 88px;
+      float: left;
+      margin: 73px 0px 0px 33px;
+    }
+
+    #logo-text {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 40px;
+      color: #FFFFFF;
+      font-weight: normal;
+      float: left;
+      margin: 88px 0px 0px 0px;
+    }
+
+    #nav {
+      width: 929px;
+      float: left;
+      background: url('../assets/Harsh/nav-bg.jpg') repeat-x;
+      height: 38px;
+    }
+
+    #nav ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+
+    #nav ul li {
+      float: left;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #FFFFFF;
+      /*line-height:38px;*/
+      padding: 3px 50px 3px 50px;
+      border-right: 1px #00222a solid;
+      margin: 7px 0px 0px 0px;
+    }
+
+    #nav ul li a {
+      float: left;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    #nav ul li a:hover {
+      float: left;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+
+    #site-content {
+      width: 929px;
+      float: left;
+      background: url('../assets/Harsh/site-bg.jpg') repeat-y;
+    }
+
+    #col-right {
+      width: 236px;
+      float: right;
+    }
+
+    #col-left {
+      width: 623px;
+      float: left;
+      padding: 30px 35px 30px 35px;
+    }
+
+
+    #footer {
+      width: 929px;
+      float: left;
+      border-top: 8px #53666c solid;
+      clear: both;
+      height: 60px;
+    }
+
+    .h-text-1 {
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      color: #020202;
+      font-weight: bold;
+      padding: 0px 0px 15px 0px;
+    }
+
+    .h-text-2 {
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      color: #020202;
+      font-weight: bold;
+      padding: 10px 0px 10px 0px;
+    }
+
+    .h-text-3 {
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #0000ff;
+      font-weight: bold;
+      padding: 0px 0px 10px 15px;
+      background: url('../assets/Harsh/arr-2.jpg') no-repeat 0px 3px;
+      margin: 10px 0px 0px 0px;
+    }
+
+
+    .text-1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #464a4f;
+      padding: 5px 0px 5px 0px;
+    }
+
+    .text-2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #020202;
+      padding: 0px 0px 5px 0px;
+    }
+
+    ul.list-1 {
+      margin: 10px 0px 0px 15px;
+      padding: 0px;
+      list-style: none;
+    }
+
+    ul.list-1 li {
+      margin: 0px 0px 10px 0px;
+      padding: 0px 0px 0px 15px;
+      background: url('../assets/Harsh/arr-1.jpg') no-repeat 2px 5px;
+    }
+
+    .border-1 {
+      background: url('../assets/Harsh/border-bg.jpg') bottom repeat-x;
+    }
+
+    ul.footer-nav {
+      width: 430px;
+      float: right;
+      margin: 20px 0px 0px 0px;
+      padding: 0px;
+      list-style: none;
+    }
+
+    ul.footer-nav li {
+      display: inline;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #ffffff;
+      margin: 0px 10px 0px 10px;
+    }
+
+    ul.footer-nav li a {
+      display: inline;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    ul.footer-nav li a:hover {
+      text-decoration: underline;
+    }
+
+    #footer p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #ffffff;
+      width: 300px;
+      float: left;
+      margin: 20px 0px 0px 10px;
+    }
+
+    #footer a {
+      display: inline;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    #footer a:hover {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="header"> <img src="../assets/Harsh/Java.png" width="200" height="80" alt="" id="logo">
+      <h1 id="logo-text">String Methods</h1>
+    </div>
+    <div id="nav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+
+      </ul>
+    </div>
+    <div id="site-content">
+      <div id="col-left">
+        <h1 class="h-text-1">Java String Methods</h1>
+        <p class="text-1" style="font-size:20px"><strong>The String class has a set of built-in methods that you can use on strings</strong> </p>
+        <h2>String Methods:</h2>
+        <p class="text-1">
+        <dl>
+          <dt><b>
+              <h3 style="font-size:18px">1. int length():</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Returns the number of characters in the String.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>"GeeksforGeeks".length(); // returns 13</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">2. Char charAt(int i):</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Returns the character at ith index.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>"GeeksforGeeks".charAt(3); // returns ‘k’</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">3. String substring (int i):</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Return the substring from the ith index character to end.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>"GeeksforGeeks".substring(3); // returns “ksforGeeks”</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">4. String substring (int i, int j):</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Returns the substring from i to j-1 index.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>"GeeksforGeeks".substring(2, 5); // returns “eks”</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">5. String concat( String str):</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Concatenates specified string to the end of this string.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>String s1 = ”Geeks”;
+              String s2 = ”forGeeks”;
+              String output = s1.concat(s2); // returns “GeeksforGeeks”</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">6. int indexOf (String s):</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Returns the index within the string of the first occurrence of the specified string.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>String s = ”Learn Share Learn”;
+              int output = s.indexOf(“Share”); // returns 6</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">7. int indexOf (String s, int i):</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Returns the index within the string of the first occurrence of the specified string, starting at the specified index.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>String s = ”Learn Share Learn”;
+              int output = s.indexOf("ea",3);// returns 13</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">8. Int lastIndexOf( String s):</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Returns the index within the string of the last occurrence of the specified string.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>String s = ”Learn Share Learn”;
+              int output = s.lastIndexOf("a"); // returns 14</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">9. boolean equals( Object otherObj):</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Compares this string to the specified object.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>Boolean out = “Geeks”.equals(“Geeks”); // returns true
+              Boolean out = “Geeks”.equals(“geeks”); // returns false</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">10. boolean equalsIgnoreCase (String anotherString): </h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Compares string to another string, ignoring case considerations.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>Boolean out= “Geeks”.equalsIgnoreCase(“Geeks”); // returns true
+              Boolean out = “Geeks”.equalsIgnoreCase(“geeks”); // returns true</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">11. int compareTo( String anotherString):</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Compares two string lexicographically.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>int out = s1.compareTo(s2); // where s1 ans s2 are
+              // strings to be compared
+
+              This returns difference s1-s2. If :
+              out < 0 // s1 comes before s2 out=0 // s1 and s2 are equal. out> 0 // s1 comes after s2.</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">12. int compareToIgnoreCase( String anotherString):</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Compares two string lexicographically, ignoring case considerations.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>int out = s1.compareToIgnoreCase(s2);
+              // where s1 ans s2 are
+              // strings to be compared
+
+              This returns difference s1-s2. If :
+              out < 0 // s1 comes before s2 out=0 // s1 and s2 are equal. out> 0 // s1 comes after s2.</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">13. String toLowerCase():</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Converts all the characters in the String to lower case.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>String word1 = “HeLLo”;
+              String word3 = word1.toLowerCase(); // returns “hello"</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">14. String toUpperCase(): </h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Converts all the characters in the String to upper case.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>String word1 = “HeLLo”;
+              String word2 = word1.toUpperCase(); // returns “HELLO”</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">15. String trim():</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Returns the copy of the String, by removing whitespaces at both ends. It does not affect whitespaces in the middle.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>String word1 = “ Learn Share Learn “;
+              String word2 = word1.trim(); // returns “Learn Share Learn”</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          <dt><b>
+              <h3 style="font-size:18px">16. String replace (char oldChar, char newChar):</h3>
+            </b></dt>
+          <dd style="font-size:16px"><strong>Returns new string by replacing all occurrences of oldChar with newChar.</strong></dd>
+          <dt><b>
+              <h3 style="font-size:14px">Example:</h3>
+            </b></dt>
+          <dd style="font-size:14px"><strong>String s1 = “feeksforfeeks“;
+              String s2 = “feeksforfeeks”.replace(‘f’ ,’g’); // returns “geeksgorgeeks”</strong></dd>
+          <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+        </dl>
+        </p>
+        <p class="border-1">&nbsp;</p>
+
+
+
+      </div>
+      <div id="col-right">
+        <!--Designed by--><a href="http://www.htmltemplates.net">
+          <img src="../assets/Harsh/designer.gif" class="copyright" alt="html templates"></a>
+        <div style="padding: 30px 10px 10px;">
+          <h2 class="h-text-2">Others Work</h2>
+          <a href="../assignment/Atish.html">Atish</a><br>
+
+          <a href="../assignment/Namrata.html">Namrata</a><br>
+
+          <a href="../assignment/Rishi.html">Rishi</a><br>
+
+        </div>
+        <div>&nbsp;</div>
+        <div style="padding: 5px 10px;">
+          <h2 class="h-text-2">Made By</h2>
+        </div>
+        <div style="padding: 5px 10px 15px; background: rgb(216, 214, 215) none repeat scroll 0%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial;">
+          Name - Harsh Gupta
+
+          <br>
+          <br>
+          Roll No. - 1906397<br>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+
+      <ul class="footer-nav">
+        <li><a href="../index.html">Home</a></li>
+
+      </ul>
+    </div>
+  </div>
+</body>
+
 </html>
